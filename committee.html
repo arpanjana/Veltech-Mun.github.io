@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <script src="https://kit.fontawesome.com/8aafeb74ca.js"></script>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Committes</title>
+</head>
+<body>
+	<!-- <h1><strong>Committess</strong></h1> -->
+<div class="card">
+  <img src="img/d.png" alt="Denim Jeans" style="width:100%">
+  <h1>Tailored Jeans</h1>
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+
+<div class="card">
+  <img src="img/s.png" alt="Denim Jeans" style="width:100%">
+  <h1>Tailored Jeans</h1>
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+
+
+
+  <!--Import jQuery before materialize.js-->
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+<script>
+
+    $(document).ready(function() {
+
+          //dropdown
+    $('.modal').modal();
+    $(".dropdown-trigger").dropdown();
+      // Init Sidenav
+      $('.button-collapse').sideNav();
+
+      // Init Scrollspy
+      $('.scrollspy').scrollSpy();
+
+      // ScrollFire
+      const options = [
+        {
+          selector: '.main-text', offset: 0, callback: function (el) {
+            Materialize.fadeInImage($(el));
+          }
+        },
+        {
+          selector: '.navbar-fixed', offset: 1500, callback: function () {
+            $('nav').removeClass('transparent');
+            $('nav').addClass('blue-grey darken-3');
+          }
+        }
+      ];
+
+      Materialize.scrollFire(options);
+
+     
+    });
+  </script>
+</body>
+</html>
