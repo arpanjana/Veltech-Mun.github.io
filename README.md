@@ -1,2 +1,2 @@
-# Veltech-Mun
-An official site for Veltech Mun
+# Veltech-Mun(WebSite)
+This is a official site for Veltech MUN. I made this site using front-end framework MaterializeCss and HTML with some basic CSS.
